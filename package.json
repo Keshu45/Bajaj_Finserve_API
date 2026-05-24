@@ -1,0 +1,13 @@
+{
+  "name": "bajaj-finserv-challenge-root",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "cd frontend && npm install --include=dev && cd ../backend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "dev": "npm run build:frontend && cd backend && node server.js",
+    "build": "npm run build:frontend",
+    "start": "cd backend && node server.js",
+    "lint": "echo ok"
+  }
+}

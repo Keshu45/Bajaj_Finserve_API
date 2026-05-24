@@ -1,0 +1,6 @@
+{
+  "name": "Bajaj Finserv Health Dev Challenge",
+  "description": "Full stack monorepo implementation of the BFHL coding challenge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
