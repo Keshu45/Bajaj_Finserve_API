@@ -32,11 +32,10 @@ export default function App() {
     setLoading(true);
     const start = performance.now();
     try {
-      // Using VITE_API_URL if set (Netlify), otherwise default to relative path (works in AI Studio and local full-stack).
-      // We will also add full localhost fallback for people running separate VS Code terminals without proxy.
+      // Using VITE_API_URL if set, otherwise default to Render Backend URL (or localhost).
       const API_URL = import.meta.env.VITE_API_URL 
         ? import.meta.env.VITE_API_URL 
-        : (window.location.hostname === 'localhost' && window.location.port === '5173' ? 'http://localhost:3000' : '');
+        : (window.location.hostname === 'localhost' ? 'http://localhost:3000' : 'https://bajaj-finserve-api-fbma.onrender.com');
       
       const res = await fetch(`${API_URL}/bfhl`, {
         method: "POST",
