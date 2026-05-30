@@ -94,8 +94,8 @@ Your backend allows testing the `/bfhl` endpoint independently.
   ```json
   {
     "is_success": true,
-    "user_id": "Keshav_Patidar_04082004",
-    "email": "keshavpatidar231235@acropolis.in",
+    "user_id": "Kav_r_04072002",
+    "email": "abc@gmail.com",
     "roll_number": "0827CI231060",
     "numbers": ["1", "3"],
     "alphabets": ["A", "C", "z"],
